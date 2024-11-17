@@ -1,0 +1,30 @@
+.model {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    z-index: 2;
+}
+
+.model:hover .hover-text {
+    opacity: 1;
+}
+
+.model .desc {
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.model:hover .desc {
+    opacity: 0.2; /* Slight fade effect for background text */
+}
